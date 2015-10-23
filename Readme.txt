@@ -29,6 +29,10 @@ curl -H "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI
 
 For my testing I used Postman (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
 
+based on what I have understood, I added a health check URL  http://localhost:8000/api/health that just gives to you a status.
+
+I could not add anything to address the "list of files in a directory" endpoint, as the api cannot access the path beyond its root folder on the server.
+To achieve this we need to mount an external drive inside our application root folder and use os.walk() to list any thing.
 
 I have used app level versioning in this test. This is not my preferable versioning strategy, as this will have app level code duplication and url needs to be modified.
    Preferred way is to use Accept header. However, to finish the task quickly I implemented it app level.
