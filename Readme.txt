@@ -1,5 +1,6 @@
 I used Django and django rest framework for this test as we have been using django tools in our production for last few years.
 
+I haven't added any comments inline to the code. Please let me know if preferred.
 
 Dependencies:
 I have included a requirements.txt file to install all the dependencies.
