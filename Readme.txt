@@ -14,6 +14,7 @@ As of now this is not configured to run directly in apache server.
 run the following commands to deploy:
 
 >>> cd TechTest
+>>> python manage.py migrate
 >>> python manage.py runserver
 
 testing:
