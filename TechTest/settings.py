@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'health_check_cache',
     'health_check_db',
     'health_check_storage',
+    'devtest',
 )
 
 REST_FRAMEWORK = {
