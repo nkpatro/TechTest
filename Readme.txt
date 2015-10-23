@@ -1,4 +1,5 @@
-I used Django and django rest framework for this as I have been using this framework for last few years.
+I used Django and django rest framework for this test as we have been using django tools in our production for last few years.
+
 
 Dependencies:
 I have included a requirements.txt file to install all the dependencies.
@@ -26,4 +27,13 @@ curl -H "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI
 
 
 For my testing I used Postman (https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en)
+
+
+I have used app level versioning in this test. This is not my preferable versioning strategy, as this will have app level code duplication and url needs to be modified.
+   Preferred way is to use Accept header. However, to finish the task quickly I implemented it app level.
+
+
+I used the framework's builtin pagination.
+    I have defaulted it to 5 entries per page. this can be modified at runtime by setting the "limit" parameter in the URL as shown below.
+    http://localhost:8000/api/users/?limit=10
 
